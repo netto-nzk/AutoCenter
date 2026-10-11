@@ -1,8 +1,10 @@
 export const veiculos = [
-    {id:1, nome:'Bros 160', tipo:'Moto',  km:90000, selecionado:true}
+    {id:1, nome:'Bros 160', tipo:'Moto',  km:90000, ano: 2016, selecionado:true}
 ]
 
-export function adicionarVeiculo(id) {
+export function adicionarVeiculo(nome, tipo, km, ano) {
+    const veiculosId = veiculos.map(v => v.id);
+    const maiorRegistro = Math.max(...veiculosId);
     
 }
 
