@@ -30,7 +30,9 @@ export function buscarVeiculo(id) {
     return veiculos.find(v => v.id === id);
 }
 
-
+export function veiculoAtivo() {
+    return veiculos.find(v => v.selecionado === true)
+}
 
 
 
